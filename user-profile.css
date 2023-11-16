@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   }
+   body{
+    min-height: 100vh;
+    background: white;
+    color: white;
+    background-size: cover;
+    background-position: center;
+   }
+   .side-bar{
+    background:whitesmoke;
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+   }
+   header img{
+    width: 200px;
+    margin: 15px;
+    margin-left: 15px;
+    
+   }
+   .close-btn{
+    color:blue;
+    position: absolute;
+    font-size: 15px;
+    right:0px;
+    cursor:pointer;
+   }
+   .menu{
+    width: 100%;
+    margin-top: 50px;
+   }
+   .menu .heading{
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+   }
+   .menu .item{
+    position: relative;
+    cursor: pointer;
+   }
+   .menu .item a{
+    color:grey ;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 30px;
+   }
+   .menu .item a:hover{
+    background-color: rgb(227, 216, 216) ;
+    cursor: pointer;
+    color: blue;
+   }
+   .item i{
+    margin-right: 15px;
+   }
+   .item a .dropdown{
+    position: absolute;
+    right: 0px;
+    margin: 20px;
+    transition: 0.3s ease;
+   }
+   .item .sub-menu{
+    display: none;
+   }
+   .menu-btn{
+    position: absolute;
+    color:blue;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 35px;
+   }
+   .side-bar.active{
+    left: 0;
+   }
+   .side-bar ::-webkit-scrollbar{
+    width: 0px;
+   }
+   .item .sub-menu a{
+    padding-left: 80px;
+   }
+   .rotate{
+    transform: rotate(90deg);
+   }
